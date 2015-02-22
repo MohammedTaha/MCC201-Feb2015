@@ -1,0 +1,5 @@
+{
+  "name":  "My_custom_module",
+  "version" : "1.0.0",
+  "main" : "./module_main.js"
+}

@@ -1,0 +1,10 @@
+<ul class="list">
+
+    <li class="item item-checkbox" ng-repeat="task in allTODOs" ng-if="!task.isDeleted">
+        <label class="checkbox">
+            <input type="checkbox" ng-model = "task.isDone" checked>
+        </label>
+        {{task.todo}}
+    </li>
+</ul>
+

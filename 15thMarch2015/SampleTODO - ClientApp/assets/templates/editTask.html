@@ -1,0 +1,8 @@
+<div class="item item-input-inset" ng-repeat="task in allTODOs" ng-if="!task.isDeleted && !task.isDone">
+    <label class="item-input-wrapper">
+        <input type="text" placeholder="TODO" ng-model="task.todo" >
+    </label>
+    <button ng-click="saveTask($index, task.todo)" class="button button-dark button-small">
+        Save
+    </button>
+</div>

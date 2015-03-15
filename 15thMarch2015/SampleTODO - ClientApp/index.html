@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <script src = "./assets/vendor/ionic.bundle.min.js"></script>
+    <link href="./assets/vendor/ionic.css" rel="stylesheet">
+    <script src="./assets/app.js"></script>
+
+</head>
+<body ng-app = "todo">
+    <div class="bar bar-header">
+        <a class="button" ui-sref="home">Home</a>
+        <h1 class="title">My TODOs</h1>
+    </div>
+    <br><br>
+
+    <ui-view></ui-view>
+
+    <div class="bar bar-footer bar-positive">
+        <div class="title">
+            <a ui-sref="addNew" class="button button-dark"> Add New </a>
+            <a ui-sref="edit"   class="button button-dark"> Edit </a>
+            <a ui-sref="delete" class="button button-dark"> Delete </a>
+        </div>
+    </div>
+</body>
+</html>

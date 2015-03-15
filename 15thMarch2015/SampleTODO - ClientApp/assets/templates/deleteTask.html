@@ -1,0 +1,5 @@
+<ul class="list list-inset">
+    <li class="item" ng-repeat="task in allTODOs" ng-if="!task.isDeleted && !task.isDone">
+        <button class="button button-assertive button-small" ng-click="deleteTask($index)">X</button> {{task.todo}}
+    </li>
+</ul>

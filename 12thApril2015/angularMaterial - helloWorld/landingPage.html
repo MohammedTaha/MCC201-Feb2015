@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- Angulars Material CSS now available via Google CDN; version 0.8 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+    <link rel="stylesheet" href="../angularMaterial - helloWorld/style.css">
+
+</head>
+<body>
+<!-- Angular Material Dependencies -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
+
+
+<!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="./landingPage.js"></script>
+
+    <div ng-app="inputBasicDemo">
+        <div ng-controller="DemoCtrl" >
+            <md-content md-theme="docs-dark" layout="column">
+                <md-input-container>
+                    <label>Title</label>
+                    <input ng-model="user.title">
+                </md-input-container>
+                <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="user.email" type="email">
+                </md-input-container>
+
+                <div flex = '40'>
+                    <md-button class="md-raised md-warn" ng-disabled="!user.title" ng-click="gatherData()" >Warn</md-button>
+                </div>
+            </md-content>
+        </div>
+    </div>
+</body>
+</html>
